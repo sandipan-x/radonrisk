@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Radon Level Is Dangerous? — Test Result Interpreter | RadonRisk</title>
+<meta name="description" content="Enter your radon test result — get a clear risk verdict and exactly what to do next.">
+<link rel="canonical" href="https://radonrisk.fixoraa.tech/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="What Radon Level Is Dangerous? — Test Result Interpreter | RadonRisk">
+<meta property="og:description" content="Enter your radon test result — get a clear risk verdict and exactly what to do next.">
+<meta property="og:url" content="https://radonrisk.fixoraa.tech/">
+<meta property="og:type" content="website">
+<script defer src="https://t.fixoraa.tech/track.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "RadonRisk",
+      "url": "https://radonrisk.fixoraa.tech",
+      "applicationCategory": "Home Tools",
+      "operatingSystem": "Web",
+      "description": "Enter your radon test result — get a clear risk verdict and exactly what to do next.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What radon level is dangerous?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The EPA recommends fixing your home at or above 4 pCi/L. Levels between 2 and 4 are worth watching and confirming with a long-term test. Risk rises with the number — there is no perfectly safe threshold, but under 2 pCi/L is considered low."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is 4 pCi/L of radon dangerous?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the EPA’s action level — the point where mitigation is recommended. Living at 4 pCi/L carries roughly the lung-cancer risk of smoking half a pack a day for non-smokers. Standard mitigation systems reliably bring it well below 2."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I fix high radon myself?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sealing cracks and covering sumps helps but is not a substitute for a proper mitigation system. Sub-slab depressurization should be installed by a certified (NRPP/NRSB) mitigator — it typically costs $800–$2,500 and takes about a day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a radon test take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Short-term tests run 2–7 days and are fine for screening; long-term tests run 90+ days and give the most accurate picture of your real exposure. If a short test comes back elevated, confirm with a second test before mitigating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does opening windows reduce radon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Temporarily, yes — ventilation dilutes it. But it is not a solution: levels rebound when windows close, and it wastes energy. Think of ventilation as a stopgap while you arrange proper mitigation, not a fix."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I retest for radon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every two years, and after any major renovation, foundation work, or HVAC change. Also retest 24 hours and 30 days after a mitigation system is installed to confirm it worked."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{--bg:#F3F2FA;--surface:#FFFFFF;--tint:#E0DDF4;--accent:#3C27A5;--accent-deep:#2B1C78;--accent-ink:#FFFFFF;--ink:#221F33;--muted:#5A5478;--line:#D3CDEF;--display:'Gelasio',Georgia,serif;--body:'Gelasio',Georgia,serif}
+*{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.7;font-size:16px}
+.fx-wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.fx-header{background:var(--surface);border-bottom:3px solid var(--accent);position:sticky;top:0;z-index:50}
+.fx-header .fx-wrap{display:flex;align-items:center;gap:12px;padding:12px 20px;flex-wrap:wrap}
+.fx-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.fx-tile{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-deep));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px}
+.fx-name{font-weight:700;font-size:21px}
+.fx-nav{margin-left:auto;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.fx-btn{display:inline-block;padding:9px 18px;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none;border:2px solid var(--accent);color:var(--accent);font-family:system-ui,sans-serif}
+.fx-btn.solid{background:var(--accent);color:var(--accent-ink)}
+.fx-badge{display:inline-block;padding:7px 14px;border-radius:999px;background:var(--tint);color:var(--accent-deep);font-weight:700;font-size:13px;border:1.5px dashed var(--accent);font-family:system-ui,sans-serif}
+.rr-hero{padding:44px 0 6px;text-align:center}
+.rr-eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);background:var(--tint);padding:6px 14px;border-radius:999px;margin-bottom:14px;font-family:system-ui,sans-serif}
+.rr-hero h1{font-size:clamp(30px,4.6vw,46px);line-height:1.12;font-weight:700;margin-bottom:10px}
+.rr-hero p{font-size:18px;color:var(--muted);max-width:640px;margin:0 auto}
+.rr-report{margin:28px auto 8px;max-width:720px;background:var(--surface);border:2px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 14px 34px rgba(60,39,165,.12)}
+.rr-reporthead{background:var(--accent);color:#fff;padding:14px 26px;display:flex;justify-content:space-between;align-items:center;font-family:system-ui,sans-serif}
+.rr-reporthead b{letter-spacing:.06em;font-size:14px}
+.rr-reporthead span{font-size:12px;opacity:.85}
+.rr-body{padding:26px}
+.rr-inputrow{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;margin-bottom:18px}
+.rr-inputrow label{font-weight:700;font-size:14px;font-family:system-ui,sans-serif;display:block;margin-bottom:8px}
+.rr-inputrow input{font:inherit;font-family:system-ui,sans-serif;font-size:22px;width:170px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;color:var(--ink)}
+.rr-inputrow input:focus{outline:3px solid var(--tint);border-color:var(--accent)}
+.rr-unit{align-self:center;padding-bottom:6px;color:var(--muted);font-family:system-ui,sans-serif}
+.rr-band{border:2px solid;border-radius:14px;padding:18px 20px;margin-bottom:16px}
+.rr-band .bt{font-size:22px;font-weight:700;margin-bottom:4px}
+.rr-band .bv{font-size:16px}
+.rr-urgency{font-size:14px;font-weight:700;color:var(--accent-deep);background:var(--tint);border-radius:10px;padding:10px 14px;margin-bottom:16px;font-family:system-ui,sans-serif}
+.rr-actions{list-style:none;margin-bottom:16px}
+.rr-actions li{padding:10px 4px 10px 34px;position:relative;border-bottom:1px dashed var(--line);font-size:15px}
+.rr-actions li::before{content:"\2713";position:absolute;left:8px;color:var(--accent);font-weight:700}
+.rr-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rr-meta div{background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;font-family:system-ui,sans-serif}
+.rr-meta b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.article-sec{margin:40px 0;max-width:780px}.article-sec h2{font-size:25px;margin:34px 0 12px;font-weight:700}
+.article-sec p{margin-bottom:14px;color:#35324a}.article-sec ul,.article-sec ol{margin:0 0 14px 22px;color:#35324a}.article-sec li{margin-bottom:6px}
+.faq-sec{margin:36px 0;max-width:780px}.faq-sec h2{font-size:25px;font-weight:700;margin-bottom:16px}
+.faq-sec details{background:var(--surface);border:2px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.faq-sec summary{padding:16px 18px;font-weight:700;cursor:pointer;list-style:none;font-size:16px}
+.faq-sec summary::-webkit-details-marker{display:none}.faq-sec summary:hover{color:var(--accent)}
+.faq-sec details[open] summary{border-bottom:2px solid var(--line);color:var(--accent)}
+.faq-sec details p{padding:14px 18px;color:#35324a;font-size:15px}
+.fx-footer{background:#1d1930;color:#dcd8f2;margin-top:44px;padding:40px 0 34px}
+.fx-footer .fx-brand{font-size:22px;font-weight:700;margin-bottom:8px;color:#fff}
+.fx-footer p{font-size:15px;color:#a89fd0;max-width:640px;margin-bottom:14px}
+.fx-footer nav{display:flex;gap:18px;margin-bottom:16px}
+.fx-footer nav a{color:#fff;font-weight:700;text-decoration:none;border-bottom:2px solid var(--accent)}
+.fx-credit{font-size:14px!important}.fx-credit a{color:#b9aef5;font-weight:700}
+@media(max-width:760px){.rr-meta{grid-template-columns:1fr}.fx-nav{margin-left:0}}
+
+</style>
+</head>
+<body>
+<header class="fx-header">
+  <div class="fx-wrap">
+    <a class="fx-logo" href="https://radonrisk.fixoraa.tech/" aria-label="RadonRisk home">
+      <span class="fx-tile" aria-hidden="true">R</span>
+      <span class="fx-name">RadonRisk</span>
+    </a>
+    <nav class="fx-nav" aria-label="Site">
+      <a class="fx-btn" href="https://fixoraa.tech">Home</a>
+      <a class="fx-btn solid" href="https://fixoraa.tech">More Tools</a>
+      <span class="fx-badge">&#8734; Unlimited Free Usage</span>
+    </nav>
+  </div>
+</header>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pt-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:728px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <div class="origin-top scale-[0.44] sm:scale-100 shrink-0">
+        <script>
+          atOptions = { 'key' : '4e68ac77881c17fe128a46565d9a4e8c', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+        </script>
+        <script src="https://www.highrevenueformat.com/4e68ac77881c17fe128a46565d9a4e8c/invoke.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<main class="fx-wrap">
+  <section class="rr-hero">
+    <span class="rr-eyebrow">Test result interpreter</span>
+      <h1>What Radon Level Is Dangerous?</h1>
+      <p>Got a number back from your radon test? Enter your pCi/L — get a plain-English verdict, your next steps, and what mitigation really costs.</p>
+  </section>
+
+<section class="rr-report" aria-label="RadonRisk tool">
+  <div class="rr-reporthead"><b>RADON TEST INTERPRETATION</b><span>REF: EPA ACTION LEVEL 4.0 pCi/L</span></div>
+  <div class="rr-body">
+    <div class="rr-inputrow">
+      <div><label for="rr-pci">Your test result</label><input type="number" id="rr-pci" value="4.2" min="0" max="200" step="0.1"></div>
+      <span class="rr-unit">pCi/L &nbsp;(picocuries per liter)</span>
+    </div>
+    <div class="rr-band" id="rr-band" aria-live="polite"><div class="bt">—</div><div class="bv" id="rr-verdict"></div></div>
+    <div class="rr-urgency" id="rr-urgency"></div>
+    <ul class="rr-actions" id="rr-actions"></ul>
+    <div class="rr-meta">
+      <div><b>Mitigation cost</b><span id="rr-cost"></span></div>
+      <div><b>Retest reminder</b><span id="rr-retest"></span></div>
+    </div>
+  </div>
+</section>
+
+  <article class="article-sec">
+<h2>What pCi/L Actually Means</h2>
+<p>Radon is measured in <strong>picocuries per liter of air (pCi/L)</strong> — essentially, how much radioactive decay is happening in each liter of your indoor air. One picocurie is a tiny unit, but radon’s danger is cumulative: you breathe it for thousands of hours a year, and its decay products lodge in lung tissue. The average indoor level in US homes is about 1.3 pCi/L; outdoor air is around 0.4.</p><p>The number on your test is an average over the test period, not a fixed property of your house. Radon levels swing with seasons, weather, and how you use the home — winter readings run higher because houses are sealed and stack effect pulls more soil gas inside. A single short-term test is a snapshot; two tests, or one long-term test, is a portrait.</p><p>Keep perspective: radon is the second leading cause of lung cancer after smoking, but it is also one of the most fixable home hazards. Almost every elevated home can be brought under 2 pCi/L with standard mitigation. The test result is the start of a solvable problem, not a verdict on your house.</p>
+<h2>The 4.0 Action Level</h2>
+<p>The EPA’s <strong>action level is 4 pCi/L</strong>: at or above it, the agency recommends fixing your home. This is not a "safe below, dangerous above" line — risk rises roughly linearly with exposure, and the EPA also suggests <em>considering</em> action between 2 and 4. The 4.0 number is a policy judgment balancing risk against the cost and practicality of mitigation.</p><p>For context, living at 4 pCi/L carries roughly the lung-cancer risk of smoking half a pack of cigarettes a day for a non-smoker — a vivid comparison the EPA uses deliberately. At 10 pCi/L the risk is several times higher. Smokers face dramatically multiplied risk from the same radon level, which is why mitigation is especially urgent in smoking households.</p><p>Other countries draw the line differently — the World Health Organization suggests 2.7 pCi/L as a reference — but in the US, 4.0 is the number that drives real-estate transactions, and it is the threshold this interpreter uses.</p>
+<h2>Risk Bands in Plain English</h2>
+<p><strong>Under 2 pCi/L — low.</strong> Below the level where action is usually considered. File the result, retest in two years. <strong>2 to 4 — watch zone.</strong> Above average but under the action level. Run a long-term test to confirm, seal obvious entry points, and get mitigation quotes so you are ready.</p><p><strong>4 to 8 — high.</strong> At or above the EPA action level: mitigate. This is the most common "elevated" range, and standard systems fix it routinely. <strong>Above 8 — very high.</strong> Priority fix. The health case for speed strengthens with the number, and your mitigator may recommend a second suction point.</p><p>Wherever you land, the next step is never panic — it is a plan. Radon has no smell, no color, and no immediate symptoms, which makes it easy to ignore and easy to fix once you decide to act.</p>
+<h2>How Radon Gets In</h2>
+<p>Radon is a natural decay product of uranium in soil and rock. It seeps up as a gas and enters homes through <strong>foundation cracks, sump pits, crawl spaces, gaps around pipes, and even through concrete itself</strong> — concrete is porous to soil gas. Once inside, it accumulates because houses trap air far more effectively than the open ground.</p><p>The stack effect drives it: warm indoor air rises and escapes upstairs, creating slight negative pressure at the foundation that literally sucks soil gas in. That is why winter readings peak and why the lowest lived-in level — usually the basement — tests highest. If your basement is unfinished storage, test the lowest level you actually spend time in.</p><p>Newer or "tighter" homes are not immune. Energy-efficient sealing keeps conditioned air in — and soil gas too. Any home, any age, any neighborhood can have elevated radon; local geology shifts the odds but guarantees nothing house to house. Neighbors’ results do not predict yours.</p>
+<h2>Testing Right: Short vs Long Term</h2>
+<p><strong>Short-term tests</strong> (2–7 days, charcoal canisters or continuous monitors) are cheap and fast — the right tool for real-estate transactions and first screening. Their weakness is weather: a stormy week can skew results 30 percent or more. Always follow an elevated short test with a second measurement before spending on mitigation.</p><p><strong>Long-term tests</strong> (90+ days, alpha-track detectors) average out the swings and give the number your lungs actually experience. If your short test landed in the 2–4 watch zone, a long-term test is the perfect next step — it answers "is this real?" better than anything.</p><p>Test placement matters: put the device in the lowest lived-in level, 20 inches off the floor, away from drafts, exterior walls, and humidity. Keep windows closed (normal entry/exit excepted) for 12 hours before and during short tests. And retest every two years — levels drift as soil settles, foundations crack, and HVAC systems change.</p>
+<h2>Mitigation: What It Costs and How It Works</h2>
+<p>The standard fix is <strong>sub-slab depressurization</strong>: a pipe through the foundation slab (or a sump cover) connected to a quiet fan that vents soil gas above the roofline. It reverses the pressure gradient so radon never enters. Installation usually takes one day, the fan hums softly in the background, and it works in the vast majority of homes.</p><p>Cost typically runs <strong>$800 to $2,500</strong> depending on foundation type, home size, and local labor — crawl spaces and complex foundations cost more. Running the fan adds a few dollars a month in electricity. Compare that to the risk it removes and it is among the cheapest safety upgrades a homeowner can buy.</p><p>Hire a <strong>certified mitigator</strong> (NRPP or NRSB listed) — not a general handyman. Ask for a post-installation test proving levels dropped, a warranty on the fan, and a labeled system with a manometer so you can verify it is running at a glance. Sealing cracks alone is not mitigation; it helps, but it is not a substitute for depressurization.</p>
+<h2>After Mitigation</h2>
+<p>Retest <strong>24 hours after the system starts running</strong>, then again in 30 days — you want confirmation, not hope. A good system brings most homes under 2 pCi/L, often under 1. After that, retest every two years and glance at the manometer seasonally; fans last 5–10 years and replacements run a few hundred dollars.</p><p>Tell your buyer someday: a mitigated home with documentation is a selling point, not a stigma. Keep the install receipt, the post-mitigation test, and the fan warranty together — real-estate radon questions are routine, and paperwork ends them.</p><p>If levels stay stubbornly high after mitigation, the fixes escalate: a second suction point, sealing the slab perimeter, or addressing a connected crawl space. An experienced mitigator diagnoses this from the follow-up test pattern — which is another reason to hire certified.</p>
+<h2>Renters and Buyers</h2>
+<p><strong>Renters:</strong> you can test — kits cost under $20 — and in many states landlords must disclose known radon and mitigate elevated levels. Send results in writing, cite your state’s radon law, and keep copies. You cannot install a mitigation system in a home you do not own, but documented notice creates the obligation.</p><p><strong>Buyers:</strong> make the radon test a contingency, not an afterthought. If results come back at 4+, negotiate a seller credit or completed mitigation before closing — it is routine, like a roof credit. Never waive the test because the home is new or the neighborhood "tests low."</p><p><strong>Sellers:</strong> test before listing. A clean result under 2 removes the issue entirely; an elevated result you mitigate on your schedule is cheaper and calmer than one discovered mid-transaction. Either way, you control the timeline instead of the buyer’s inspector.</p>
+  </article>
+  <section class="faq-sec" aria-label="Frequently asked questions">
+    <h2>Frequently asked questions</h2>
+<details><summary>What radon level is dangerous?</summary><p>The EPA recommends fixing your home at or above 4 pCi/L. Levels between 2 and 4 are worth watching and confirming with a long-term test. Risk rises with the number — there is no perfectly safe threshold, but under 2 pCi/L is considered low.</p></details>
+<details><summary>Is 4 pCi/L of radon dangerous?</summary><p>It is the EPA’s action level — the point where mitigation is recommended. Living at 4 pCi/L carries roughly the lung-cancer risk of smoking half a pack a day for non-smokers. Standard mitigation systems reliably bring it well below 2.</p></details>
+<details><summary>Can I fix high radon myself?</summary><p>Sealing cracks and covering sumps helps but is not a substitute for a proper mitigation system. Sub-slab depressurization should be installed by a certified (NRPP/NRSB) mitigator — it typically costs $800–$2,500 and takes about a day.</p></details>
+<details><summary>How long does a radon test take?</summary><p>Short-term tests run 2–7 days and are fine for screening; long-term tests run 90+ days and give the most accurate picture of your real exposure. If a short test comes back elevated, confirm with a second test before mitigating.</p></details>
+<details><summary>Does opening windows reduce radon?</summary><p>Temporarily, yes — ventilation dilutes it. But it is not a solution: levels rebound when windows close, and it wastes energy. Think of ventilation as a stopgap while you arrange proper mitigation, not a fix.</p></details>
+<details><summary>How often should I retest for radon?</summary><p>Every two years, and after any major renovation, foundation work, or HVAC change. Also retest 24 hours and 30 days after a mitigation system is installed to confirm it worked.</p></details>
+  </section>
+</main>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pb-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:300px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <script>
+      (function(grnp){
+      var d = document,
+          s = d.createElement('script'),
+          l = d.currentScript || d.scripts[d.scripts.length - 1];
+      s.settings = grnp || {};
+      s.src = "\/\/peacefulbicycle.com\/bnXtVJsnd.GElF0oYVWQcY\/Qe\/mf9qu-ZqUtlZk\/PzTHcx1LM\/jWIZwkMTj\/U\/t-NrzmUnyOMsj\/AzydO\/Qx";
+      s.async = true;
+      s.referrerPolicy = 'no-referrer-when-downgrade';
+      l.parentNode.insertBefore(s, l);
+      })({})
+      </script>
+    </div>
+  </div>
+</div>
+<footer class="fx-footer">
+  <div class="fx-wrap">
+    <div class="fx-brand">RadonRisk</div>
+    <p>RadonRisk translates your radon test number into a clear risk verdict with next steps, mitigation costs and a retest reminder.</p>
+    <nav aria-label="Footer">
+      <a href="https://fixoraa.tech">Home</a>
+      <a href="https://fixoraa.tech">More Tools</a>
+    </nav>
+    <p class="fx-credit">Made by <a href="https://fixoraa.tech">Fixoraa</a> &middot; Free forever, no signup.</p>
+  </div>
+</footer>
+<script>
+// Interpret a radon test result (pCi/L) into a plain-English verdict.
+// EPA action level: 4 pCi/L. World averages ~1.3 pCi/L indoors.
+function radonRisk(pciL) {
+  var v = Math.max(0, pciL || 0);
+  var band, verdict, urgency, actions;
+  if (v < 2) {
+    band = 'low';
+    verdict = 'Low risk — your level is below the level where action is usually considered.';
+    urgency = 'No rush. Retest every 2 years or after major renovations.';
+    actions = ['Keep this result with your home records.', 'Retest in 2 years — radon levels drift with seasons and soil conditions.', 'Test again after finishing a basement or changing the HVAC system.'];
+  } else if (v < 4) {
+    band = 'watch';
+    verdict = 'Moderate — below the EPA action level, but above average. Mitigation is worth considering.';
+    urgency = 'No emergency, but make a plan within the next year.';
+    actions = ['Run a long-term (90+ day) test to confirm the number — short tests swing with weather.', 'Seal obvious foundation cracks and sump openings as a first step.', 'Get 2–3 mitigation quotes so you know your options.'];
+  } else if (v <= 8) {
+    band = 'high';
+    verdict = 'High — at or above the EPA action level of 4 pCi/L. The EPA recommends fixing your home.';
+    urgency = 'Schedule mitigation in the next few months.';
+    actions = ['Hire a certified radon mitigator (look for NRPP/NRSB certification).', 'A sub-slab depressurization system is the standard fix — usually installed in one day.', 'Retest 24 hours after the system runs, then every 2 years.'];
+  } else {
+    band = 'urgent';
+    verdict = 'Very high — well above the action level. Treat this as a priority fix, not a someday project.';
+    urgency = 'Get quotes this month and mitigate as soon as a contractor is available.';
+    actions = ['Do not delay: higher levels mean proportionally higher lung-cancer risk for smokers especially.', 'Ask the mitigator about a second suction point for very high readings.', 'Retest immediately after installation and confirm levels stay under 2 pCi/L.'];
+  }
+  // Retest reminder date: ~2 years out, or 1 year for watch band
+  var d = new Date();
+  d.setFullYear(d.getFullYear() + (band === 'watch' ? 1 : 2));
+  return {
+    pciL: v,
+    band: band,
+    verdict: verdict,
+    urgency: urgency,
+    actions: actions,
+    costLow: 800,
+    costHigh: 2500,
+    retestDate: d.toISOString().slice(0, 10)
+  };
+}
+
+if (typeof document !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', function () {
+    var pci = document.getElementById('rr-pci');
+    if (!pci) return;
+    var BAND_STYLE = {
+      low: ['Low risk', '#2F7D32', '#E5F3E6'],
+      watch: ['Watch zone', '#8C6921', '#F7EFDC'],
+      high: ['Action needed', '#A53C27', '#F9E4DE'],
+      urgent: ['Priority fix', '#7A1E12', '#F6DCD6']
+    };
+    function run() {
+      var r = radonRisk(parseFloat(pci.value) || 0);
+      var st = BAND_STYLE[r.band];
+      var banner = document.getElementById('rr-band');
+      banner.textContent = st[0] + ' — ' + r.pciL + ' pCi/L';
+      banner.style.background = st[2];
+      banner.style.color = st[1];
+      banner.style.borderColor = st[1];
+      document.getElementById('rr-verdict').textContent = r.verdict;
+      document.getElementById('rr-urgency').textContent = r.urgency;
+      var ul = document.getElementById('rr-actions');
+      ul.innerHTML = '';
+      r.actions.forEach(function (a) {
+        var li = document.createElement('li');
+        li.textContent = a;
+        ul.appendChild(li);
+      });
+      document.getElementById('rr-cost').textContent =
+        'Typical mitigation: $' + r.costLow.toLocaleString('en-US') + '–$' + r.costHigh.toLocaleString('en-US');
+      document.getElementById('rr-retest').textContent = 'Retest by: ' + r.retestDate;
+    }
+    pci.addEventListener('input', run);
+    run();
+  });
+}
+
+</script>
+</body>
+</html>
